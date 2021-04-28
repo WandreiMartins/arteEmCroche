@@ -197,7 +197,13 @@ img{
     font-family: 'Montserrat', sans-serif;
     top: -4px; 
 }
-.btn-fechar.btn-remover{
+.btn-fechar:active{
+    background-color: #9c0b78;
+}
+/* .btn-fechar.btn-remover{
+    background-color: yellow;
+} */
+.btn-remover{
     display: none;
 }
 .box-flutuante button{
@@ -227,4 +233,28 @@ img{
     color:rgb(70, 70, 70) ;
     /* text-shadow: 1px 1px 0px rgb(80, 80, 80); */
     font-size: 1.4rem;
+}
+.whatsapp{
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+
+
+}
+.whatsapp i{
+    color: #7c0960;
+    font-size: 5rem;
+    cursor: pointer;
+    animation:wtapp 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes wtapp{
+    0%{
+        transform: rotateZ(0deg); 
+    }
+    50%{
+        transform: rotateZ(10deg);
+    }
 }
