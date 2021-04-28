@@ -17,24 +17,28 @@
 
 <body>
     <header>
-
+        <div class="redes">
+            <div class="instagram">
+                <a href="https://www.instagram.com/mikaelearteemcroche/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
         <div class="logo"></div>
         <div class="comunicado">
             <p>Olá, sejam todos bem vindos! Todos nossos anúncios serão redirecionados para o Mercado Livre. 😊 </p>
         </div>
         <nav>
             <ul>
-                <li> <a href="#" id="link"> Bebês <span></span></a></li>
-                <li> <a href="#" id="link"> Gorros e cachicóis<span></span></a></li>
-                <li> <a href="#" id="link">Meias e luvas<span></span></a> </li>
-                <li> <a href="#" id="link">Decoração<span></span></a> </li>
-                <li> <a href="#" id="link">Roupas<span></span></a> </li>
+                <li data-bebe> <a id="link"> Bebês <span></span></a></li>
+                <li data-gorros> <a href="#" id="link"> Gorros e cachicóis<span></span></a></li>
+                <li data-meias> <a href="#" id="link">Meias e luvas<span></span></a> </li>
+                <li data-dec> <a href="#" id="link">Decoração<span></span></a> </li>
+                <li data-roupas> <a href="#" id="link">Roupas<span></span></a> </li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="tprod">
-            <div class="prod">
+            <div class="prod" data-bebep="bebep">
                 <div class="img">
                     <img src="img/teste.PNG" alt="img">
                 </div>
@@ -53,7 +57,24 @@
             </div>
             <div class="prod">
                 <div class="img">
-                    <img src="img/teste.PNG" alt="img">
+                    <img src="img/img2.PNG" alt="img">
+                </div>
+                <div class="desc">
+                    <div class="titulo">
+                        <h2>Conjunto em crochê de Sapatinhos + Luvas + Gorro + Polvinho feliz</h2>
+
+                    </div>
+                    <div class="preco">
+                        <h3>R$: 150,00</h3>
+                    </div>
+                    <div class="desc-item">
+                        <button>Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="prod" data-bebep="bebep">
+                <div class=" img">
+                    <img src="img/img3.PNG" alt="img">
                 </div>
                 <div class="desc">
                     <div class="titulo">
@@ -70,24 +91,7 @@
             </div>
             <div class="prod">
                 <div class="img">
-                    <img src="img/teste.PNG" alt="img">
-                </div>
-                <div class="desc">
-                    <div class="titulo">
-                        <h2>Conjunto em crochê de Sapatinhos + Luvas + Gorro + Polvinho feliz</h2>
-
-                    </div>
-                    <div class="preco">
-                        <h3>R$: 150,00</h3>
-                    </div>
-                    <div class="desc-item">
-                        <button>Comprar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="prod">
-                <div class="img">
-                    <img src="img/teste.PNG" alt="img">
+                    <img src="img/img4.PNG" alt="img">
                 </div>
                 <div class="desc">
                     <div class="titulo">
@@ -113,12 +117,14 @@
         <div class="btn-fechar">
             <p>x</p>
         </div>
-        <button>Faça sua encomenda aqui!<i class="fab fa-whatsapp"></i></button>
+        <a href="https://api.whatsapp.com/send/?phone=556993216379&text&app_absent=0" target="_blank"><button>Faça sua
+                encomenda aqui!<i class="fab fa-whatsapp"></i></button></a>
     </div>
     <div class="whatsapp btn-remover">
         <i class="fab fa-whatsapp"></i>
     </div>
     <script src="script.js"></script>
+    <script src="filtro.js"></script>
 </body>
 
 </html>

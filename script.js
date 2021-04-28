@@ -27,7 +27,6 @@ let btn = document.querySelector('.btn-fechar')
 console.log(btn)
 btn.onclick = function(){
     let box = document.querySelector('.box-flutuante')
-    console.log(box)
     box.classList.add('btn-remover')
     whats.classList.remove('btn-remover')
 }
